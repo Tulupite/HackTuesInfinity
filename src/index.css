@@ -13,8 +13,11 @@ code {
 }
 
 .Background{
-  position: relative;
+  position: static;
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -0.05vh;
 }
 
 h3 {
@@ -26,8 +29,8 @@ h3 {
 
 .text-box{
   text-align: center;
-  padding: 2rem 1rem;
-  text-align: justify;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
 }
 
 .center {
@@ -278,4 +281,8 @@ h3 {
 }
 .btn-news.btn-contests a:hover {
   color: #000;
+}
+
+.form-label{
+  margin-right: 1vh;
 }

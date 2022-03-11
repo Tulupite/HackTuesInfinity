@@ -11,16 +11,17 @@ function PlanetsModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title>
-          Information about {props.planetName}
+          Информация за {props.planetName}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>What is {props.planetName} ?</h4>
+        <h4>Какво е {props.planetName} ?</h4>
         <p>
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button>Добави коментар</Button>
+        <Button onClick={props.onHide}>Затвори</Button>
       </Modal.Footer>
     </Modal>
   );

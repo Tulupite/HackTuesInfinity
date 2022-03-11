@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import PlanetsModal from './Navbar/PlanetsModal';
 
 function Planet(props){
-    function getInfo(){
-        
-        console.log('Clicked - ' + props.className);
-    }
+    const [ModalShow, setModalShow] = React.useState(false);
+    
     return(
-            <div className={props.className} onClick={getInfo}/>
+        <div>
+            <div className={props.className} onClick={() => setModalShow(true)}/>
+            <PlanetsModal show={ModalShow} planetName = {props.className} onHide={() => setModalShow(false)} />
+        </div>
     ); 
   };
   

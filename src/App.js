@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import 'reactjs-popup/dist/index.css';
-import Cosmos from './components/Cosmos.js';
-import Galaxy from "./components/galaxy.js";
-import NewsPhoto from './components/newsPhoto.js';
-import TextBox from './components/TextBox.js';
+import Cosmos from './components/Cosmos';
+import NewsPhoto from './components/newsPhoto';
+import TextBox from './components/TextBox';
+import NavbarComponent from './components/Navbar/NavbarComponent';
 
 function App() {
   return (
     <div className="App">
-      
-      <Cosmos></Cosmos>
+      <NavbarComponent/>
+      <Cosmos/>
       <TextBox/>
       <NewsPhoto/>
-      
     </div>
   );
 }

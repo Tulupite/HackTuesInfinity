@@ -29,3 +29,152 @@ h3 {
   padding: 2rem 1rem;
   text-align: justify;
 }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.sun {
+ 
+  display: flex;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 10px;
+  
+  
+  
+  
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+  content:url('./images/sun.png');
+  border-radius: 50%;
+  
+}
+.mercury {
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 250px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  content:url('./images/mercury.png');
+  border-radius: 50%;
+  
+}
+.venus {
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 370px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  content:url('./images/venus.png');
+  border-radius: 50%;
+  
+}
+.earth {
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 500px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  content:url('./images/earth.png');
+  border-radius: 50%;
+  
+}
+
+.mars {
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 650px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  content:url('./images/mars.png');
+  border-radius: 50%;
+  
+}
+
+.jupiter{
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 800px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  content:url('./images/jupiter.png');
+  border-radius: 50%;
+  
+}
+.saturn{
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 950px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 80px;
+  content:url('./images/saturn.png');
+  border-radius: 50%;
+  
+}
+.uranus{
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 1100px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 70px;
+  content:url('./images/uranus.png');
+  border-radius: 50%;
+  
+}
+.neptune{
+
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  left: 1300px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 70px;
+  content:url('./images/neptune.png');
+  border-radius: 50%;
+  
+}

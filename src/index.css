@@ -40,10 +40,10 @@ h3 {
 }
 
 .sun {
- 
+
   display: flex;
   position: absolute;
-  margin-top: 350px;
+  margin-top: 270px;
   margin-left: 10px;
   
   
@@ -75,13 +75,13 @@ h3 {
 
   display: flex;
   position: absolute;
-  margin-top: 420px;
+  margin-top: 300px;
   left: 370px;
   
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   content:url('./images/venus.png');
   border-radius: 50%;
   
@@ -90,13 +90,13 @@ h3 {
 
   display: flex;
   position: absolute;
-  margin-top: 420px;
+  margin-top: 350px;
   left: 500px;
   
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 50px;
+  height: 120px;
+  width: 130px;
   content:url('./images/earth.png');
   border-radius: 50%;
   
@@ -107,12 +107,12 @@ h3 {
   display: flex;
   position: absolute;
   margin-top: 420px;
-  left: 650px;
+  left: 670px;
   
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   content:url('./images/mars.png');
   border-radius: 50%;
   
@@ -122,13 +122,13 @@ h3 {
 
   display: flex;
   position: absolute;
-  margin-top: 420px;
+  margin-top: 300px;
   left: 800px;
   
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 50px;
+  height: 150px;
+  width: 150px;
   content:url('./images/jupiter.png');
   border-radius: 50%;
   
@@ -138,12 +138,12 @@ h3 {
   display: flex;
   position: absolute;
   margin-top: 420px;
-  left: 950px;
+  left: 1000px;
   
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 80px;
+  height: 120px;
+  width: 200px;
   content:url('./images/saturn.png');
   border-radius: 50%;
   
@@ -152,13 +152,13 @@ h3 {
 
   display: flex;
   position: absolute;
-  margin-top: 420px;
-  left: 1100px;
+  margin-top: 320px;
+  left: 1200px;
   
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 70px;
+  height: 90px;
+  width: 130px;
   content:url('./images/uranus.png');
   border-radius: 50%;
   
@@ -168,12 +168,12 @@ h3 {
   display: flex;
   position: absolute;
   margin-top: 420px;
-  left: 1300px;
+  left: 1400px;
   
   margin-left: auto;
   margin-right: auto;
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
   content:url('./images/neptune.png');
   border-radius: 50%;
   

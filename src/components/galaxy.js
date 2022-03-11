@@ -2,6 +2,8 @@ import Planet from "./planet";
 import React, { useState } from "react";
 
 function Galaxy(props) {
+    
+
     return (
         <div >
             <Planet className="sun"></Planet>

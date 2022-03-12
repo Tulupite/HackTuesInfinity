@@ -21,7 +21,11 @@ const NavbarComponent = () => {
   return (
     <Navbar bg="dark" variant="dark">
   <Container>
-    <Navbar.Brand className="company-name" href="#home"> Space Plazza</Navbar.Brand>
+    <Navbar.Brand className="company-name" href="#home">
+      <img
+        alt=""
+        className="brand-logo"
+      />{' '} Space Plazza</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="justify-content-end" style={{ width: "100%" }}>

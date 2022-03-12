@@ -318,3 +318,9 @@ h3 {
   letter-spacing: 1px;
   line-height: 1.1;
 }
+
+.brand-logo{
+  content:url('./images/moon.png');
+  height: 30px;
+  width: 30px;
+}

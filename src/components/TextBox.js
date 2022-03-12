@@ -8,4 +8,4 @@ const TextBox = () => {
     )
 }
 
-export default TextBox
+export default TextBox;

@@ -11,7 +11,7 @@ function FormSignUp(props){
         >
             <Modal.Header closeButton>
                 <ModalTitle>
-                    Регистрация
+                    Влез
                 </ModalTitle>
             </Modal.Header>
             <ModalBody className="form-inputs">

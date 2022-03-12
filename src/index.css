@@ -286,3 +286,35 @@ h3 {
 .form-label{
   margin-right: 1vh;
 }
+
+
+.form-label{
+  margin-right: 1vh;
+}
+
+.company-name{
+  font-family: "Times New Roman", Times, serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.1;
+}
+
+.Alian{
+  display: flex;
+  position: absolute;
+  margin-top: 640px;
+  left: 135px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  height: 140px;
+  width: 140px;
+  content:url('./images/Alian.png');
+  border-radius: 50%;
+}
+
+.PopUpText{
+  letter-spacing: 1px;
+  line-height: 1.1;
+}

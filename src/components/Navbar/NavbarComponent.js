@@ -3,8 +3,10 @@ import { Navbar,Nav,NavDropdown,Container} from 'react-bootstrap';
 import PlanetsModal from './PlanetsModal';
 import GoToBottom from './GoToBottom';
 import FormSignUp from '../FormSignUp';
+import FormSignIn from '../FormLoginIn';
 
 const NavbarComponent = () => {
+  const [SunModalShow, setSunModalShow] = React.useState(false);
   const [MercuryModalShow, setMercuryModalShow] = React.useState(false);
   const [VenusModalShow, setVenusModalShow] = React.useState(false);
   const [EarthModalShow, setEarthModalShow] = React.useState(false);
@@ -14,19 +16,24 @@ const NavbarComponent = () => {
   const [UranusModalShow, setUranusModalShow] = React.useState(false);
   const [NeptuneModalShow, setNeptuneModalShow] = React.useState(false);
   const [SignUpShow, setSignUpShow] = React.useState(false);
+  const [LogInShow, setLogInShow] = React.useState(false);
 
   return (
     <Navbar bg="dark" variant="dark">
   <Container>
-    <Navbar.Brand href="#home"> Solar System Review</Navbar.Brand>
+    <Navbar.Brand className="company-name" href="#home"> Space Plazza</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="justify-content-end" style={{ width: "100%" }}>
-        <Nav.Link>Влез</Nav.Link>
+        <Nav.Link onClick={() => setLogInShow(true)}>Влез</Nav.Link>
+          <FormSignIn show = {LogInShow} onHide={() => setLogInShow(false)}/>
         <Nav.Link onClick={() => setSignUpShow(true)}>Регистрация</Nav.Link>
           <FormSignUp show={SignUpShow} onHide={() => setSignUpShow(false)}/>
         <Nav.Link onClick = {GoToBottom}>Новини</Nav.Link>
         <NavDropdown title="Планети" id="nav-dropdown">
+          <NavDropdown.Item onClick={() => setSunModalShow(true)}>Слънце</NavDropdown.Item>
+            <PlanetsModal show={SunModalShow} planetName = "Слънце" onHide={() => setSunModalShow(false)} />
+          <NavDropdown.Divider />
           <NavDropdown.Item onClick={() => setMercuryModalShow(true)}>Меркурий</NavDropdown.Item>
             <PlanetsModal show={MercuryModalShow} planetName = "Меркурий" onHide={() => setMercuryModalShow(false)} />
           <NavDropdown.Divider />

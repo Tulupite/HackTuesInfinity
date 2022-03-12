@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { Button, ModalBody, ModalTitle} from 'react-bootstrap';
 
@@ -10,18 +10,18 @@ function FormSignUp(props){
         console.log(password);
         console.log(email);
         
-        const requestOptions = {
-            method: 'POST', headers: { 'Content-Type': 'application/json' }, 
-            body: JSON.stringify({ email: email, password: password}),
-            mode: 'cors'   
-        };     
-        console.log(requestOptions);
-        fetch('http://localhost:8080/add', requestOptions)         
-        .then(response => {if(!response.ok) throw new Error(response.status)
-        else{
-            props.onHide();
-        }
-        });
+        //const requestOptions = {
+        //    method: 'POST', headers: { 'Content-Type': 'application/json' }, 
+            //body: JSON.stringify({ email: email, password: password}),
+            //mode: 'cors'   
+        //};     
+        //console.log(requestOptions);
+        //fetch('http://localhost:8080/add', requestOptions)         
+        //.then(response => {if(!response.ok) throw new Error(response.status)
+        //else{
+        //    props.onHide();
+        //}
+        //});
     }
 
     return (

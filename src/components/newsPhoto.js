@@ -7,7 +7,7 @@ import News from "./News";
 import "./app.css";
 
 const NewsBackground = () => (
-    <Parallax className='Background' bgImage={NewsPhoto} strength={800}>
+    <Parallax  bgImage={NewsPhoto} strength={800}>
         <NewsContextProvider>
             <News />
         </NewsContextProvider>

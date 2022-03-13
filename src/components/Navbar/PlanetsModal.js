@@ -10,7 +10,7 @@ function PlanetsModal(props) {
         mode: 'cors'   
     };     
     console.log(requestOptions);
-    fetch('http://localhost:8080/all', requestOptions)         
+    fetch('http://localhost:8080/allPlanets', requestOptions)         
     .then(response => {if(!response.ok) throw new Error(response.status)
     else{
         props.onHide();

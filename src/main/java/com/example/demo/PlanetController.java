@@ -21,7 +21,7 @@ public class PlanetController {
         List<PlanetDTO> dtoPlanets = new ArrayList<>();
         for(Planet planet : dbPlanets){
             PlanetDTO dto = new PlanetDTO();
-            dto.setDescrption(planet.getDescription());
+            dto.setDescription(planet.getDescription());
             dto.setName(planet.getName());
             dtoPlanets.add(dto);
         };

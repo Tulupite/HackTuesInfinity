@@ -6,7 +6,7 @@ function PlanetsModal(props) {
   const getPlanet = () => {
     const requestOptions = {
         method: 'GET', headers: { 'Content-Type': 'application/json' }, 
-        body: JSON.stringify({descrption: descrption}),
+        body: JSON.stringify({description: description}),
         mode: 'cors'   
     };     
     console.log(requestOptions);

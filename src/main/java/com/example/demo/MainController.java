@@ -44,6 +44,24 @@ public class MainController {
         return dtoUsres;
     }
 
+    @Autowired
+    private PlanetRepository planetRepository;
+
+    @GetMapping(path="/allPlanets")
+    public @ResponseBody
+    List<PlanetDTO> getAllPlanets(){
+        Iterable<Planet> dbPlanets = planetRepository.findAll();
+        List<PlanetDTO> dtoPlanets = new ArrayList<>();
+        for(Planet planet : dbPlanets){
+            PlanetDTO dto = new PlanetDTO();
+            dto.setDescription(planet.getDescription());
+            dto.setName(planet.getName());
+            dtoPlanets.add(dto);
+        };
+        return dtoPlanets;
+    }
+
+
     @GetMapping(path="/test")
     public
     String Test() {

@@ -5,15 +5,15 @@ import PopUp from "./PopUp";
 function Galaxy(props) {
     return (
         <div >
-            <Planet className="Sun" classNameBG="Слънцето"></Planet>
-            <Planet className="Mercury" classNameBG="Меркурий"></Planet>
-            <Planet className="Venus" classNameBG="Венера"></Planet>
-            <Planet className="Earth" classNameBG="Земята"></Planet>
-            <Planet className="Mars" classNameBG="Марс"></Planet>
-            <Planet className="Jupiter" classNameBG="Юпитер"></Planet>
-            <Planet className="Saturn" classNameBG="Сатурн"></Planet>
-            <Planet className="Uranus" classNameBG="Уран"></Planet>
-            <Planet className="Neptune" classNameBG="Нептун"></Planet>
+            <Planet className="Sun"></Planet>
+            <Planet className="Mercury"></Planet>
+            <Planet className="Venus"></Planet>
+            <Planet className="Earth"></Planet>
+            <Planet className="Mars"></Planet>
+            <Planet className="Jupiter"></Planet>
+            <Planet className="Saturn"></Planet>
+            <Planet className="Uranus"></Planet>
+            <Planet className="Neptune"></Planet>
             <PopUp/>
         </div>
     );

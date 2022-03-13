@@ -33,39 +33,39 @@ function FormSignUp(props){
         >
             <Modal.Header closeButton>
                 <ModalTitle>
-                    Регистрация
+                    Register
                 </ModalTitle>
             </Modal.Header>
             <ModalBody className="form-inputs" >
                 <label htmlFor="email" className='form-label'>
-                    Имейл:    
+                    Email:    
                 </label>
                 <input
                     id = 'email'
                     type='email'
                     name='email'
                     className="form-input"
-                    placeholder="Въведи имейл"
+                    placeholder="Enter email"
                     onChange={e => setEmail(e.target.value)}
                 />
                 <p />
                 <label htmlFor="password" className='form-label'>
-                    Парола:   
+                    Password:   
                 </label>
                 <input
                     id = 'password'
                     type='password'
                     name='password'
                     className="form-input"
-                    placeholder="Въведи парола"
+                    placeholder="Enter password"
                     onChange={e => setPassword(e.target.value)}
                 />
             </ModalBody>
             <Modal.Footer>
             <Button className="form-input-btn" type='submit' onClick={register}>
-                Потвърди
+                Confirm
             </Button>
-                <Button onClick={props.onHide}>Затвори</Button>
+                <Button onClick={props.onHide}>Close</Button>
             </Modal.Footer>
         </Modal>
     )

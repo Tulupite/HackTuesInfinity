@@ -7,7 +7,7 @@ function Planet(props){
     return(
         <div>
             <div className={props.className} onClick={() => setModalShow(true)}/>
-            <PlanetsModal show={ModalShow} planetName = {props.classNameBG} onHide={() => setModalShow(false)} />
+            <PlanetsModal show={ModalShow} planetName = {props.className} onHide={() => setModalShow(false)} />
         </div>
     ); 
   };

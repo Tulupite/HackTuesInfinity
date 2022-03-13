@@ -3,21 +3,6 @@ import Modal from "react-bootstrap/Modal";
 import { Button} from 'react-bootstrap';
 
 function PlanetsModal(props) { 
-  const getPlanet = () => {
-    const requestOptions = {
-        method: 'GET', headers: { 'Content-Type': 'application/json' }, 
-        body: JSON.stringify({description: description}),
-        mode: 'cors'   
-    };     
-    console.log(requestOptions);
-    fetch('http://localhost:8080/allPlanets', requestOptions)         
-    .then(response => {if(!response.ok) throw new Error(response.status)
-    else{
-        props.onHide();
-    }
-    });
-  }
-  
   return (
     <Modal
       {...props}
@@ -31,9 +16,10 @@ function PlanetsModal(props) {
       </Modal.Header>
       <Modal.Body>
         <h4>What is {props.planetName} ?</h4>
+        <p>{props.planetInfo}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={getPlanet}>Show Information</Button>
+        <Button >Show Information</Button>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
